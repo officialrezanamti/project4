@@ -14,7 +14,7 @@ import Swal from "sweetalert2";
 
 
 
-export default function Article({ time }) {
+export default function Article() {
   let articleId = useParams().articleId;
   let [articleData, setArticleData] = useState({});
 
@@ -25,6 +25,9 @@ export default function Article({ time }) {
       .then((response) => setArticleData(response.data));
   }, []);
 
+  const editArticleHandler = (articleId) => {
+    navigate(`/edit-article/${articleId}`)
+  }
   const deletHandler = (id) =>{
 
     Swal.fire({
@@ -78,7 +81,7 @@ export default function Article({ time }) {
             </p>
           </div>
           <div className="deleteAndEdit">
-            <button className="blue"> <MdEdit /> Edit Article</button>
+            <button className="blue" onClick={() => editArticleHandler(articleId)}> <MdEdit /> Edit Article</button>
             <button className="red" onClick={() => deletHandler(articleId)}> <FaTrash /> Delete Article</button>
           </div>
         </div>
