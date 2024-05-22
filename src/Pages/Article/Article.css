@@ -1,0 +1,73 @@
+.articlaPageContext{
+    display: flex;
+    padding: 50px;
+    text-align: justify;
+    width: 100%;
+    
+}
+.cardArticleContext{
+    width: 40%;
+    margin-right: 50px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    padding: 20px;
+    height: 60vh;
+}
+.articleDescContext{
+
+    width: 100%;
+    
+}
+.picArticleContext{
+    width: 85%;
+    position: relative;
+    left: 32px;
+    border-radius: 20px;
+    top: -40px;
+}
+.articleTitleContext{
+    text-align: center;
+}
+.detail{
+   
+    padding: 10px;
+    margin: 15px;
+}
+.detail p{
+    margin: 8px;
+}
+.deleteAndEdit{
+    
+    width: 100%;
+    position: relative;
+    top : -15px
+}
+.blue , .red{
+    padding: 9px 25px;
+    margin: 10px;
+    border: unset;
+    background-color: white;
+    
+}
+.blue{
+    outline: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+    transition: all .2s;
+    cursor: pointer;
+}
+.blue:hover{
+    background-color: blue;
+    color: white;
+}
+.red{
+    outline: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    transition: all .4s;
+    cursor: pointer;
+}
+.red:hover{
+    background-color: red;
+    color: white;
+}

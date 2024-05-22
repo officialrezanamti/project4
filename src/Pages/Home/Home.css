@@ -1,0 +1,14 @@
+.homeContainer{
+    height: 100%;
+    width: 90vw;
+    margin: auto;
+    padding: 50px 0;
+    
+}
+.itemsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articleList h1{
+    margin-left: 18px;
+}
